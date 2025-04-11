@@ -35,3 +35,20 @@
 - Containerização com **Docker**
 
 ---
+
+## 🚀 Backend em Produção
+
+- 🌍 **URL:** [https://mydeardairy.onrender.com](https://mydeardairy.onrender.com)
+- 📦 **Deploy automático via Render** após push na branch `main`.
+- 🛠️ **Ambiente:** `prod`
+
+---
+
+## 🌐 Frontend em Produção
+
+- 💻 **URL:** [https://mydeardairy-1.onrender.com](https://mydeardairy-1.onrender.com)
+- 📦 **Deploy automático via Render** após push na branch `main` no diretório `frontend`.
+- 🛠️ **Ambiente:** `prod`
+- 🔁 O frontend se comunica com o backend em [https://mydeardairy.onrender.com](https://mydeardairy.onrender.com)
+
+---
