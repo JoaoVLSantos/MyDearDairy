@@ -1,4 +1,4 @@
-package com.mydeardairy.backend;
+package com.mydeardairy;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

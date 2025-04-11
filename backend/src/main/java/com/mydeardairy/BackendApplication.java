@@ -1,4 +1,4 @@
-package com.mydeardairy.backend;
+package com.mydeardairy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
