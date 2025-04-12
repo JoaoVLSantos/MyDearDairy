@@ -25,6 +25,6 @@ jobs:
 
       - name: Construir e rodar testes
         run: |
-          cd backend/zerowaste
+          cd backend\src\main\java\com\mydeardairy
           mvn clean test 
           
