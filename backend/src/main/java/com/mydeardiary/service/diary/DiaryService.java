@@ -20,10 +20,10 @@ import static org.springframework.http.HttpStatus.NOT_FOUND;
 public class DiaryService {
 
     @Autowired
-    private DiaryRepository diaryRepository;
+    public DiaryRepository diaryRepository;
 
     @Autowired
-    private UsersRepository userRepository;
+    public UsersRepository userRepository;
 
     // Criação de uma nova entrada no diário
     public DiaryResponseDTO createDiaryEntry(DiaryRequestDTO dto, Long userId) {

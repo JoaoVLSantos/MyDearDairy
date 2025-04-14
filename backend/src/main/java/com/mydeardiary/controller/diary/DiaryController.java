@@ -7,7 +7,6 @@ import com.mydeardiary.model.user.User;
 
 import jakarta.validation.Valid;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -20,7 +19,6 @@ import java.util.List;
 @RequestMapping("/diary")
 public class DiaryController {
 
-    @Autowired
     private DiaryService diaryService;
 
     @PostMapping
@@ -41,7 +39,7 @@ public class DiaryController {
     @GetMapping("/date")
     public ResponseEntity<List<DiaryResponseDTO>> getEntriesByDate(
             @AuthenticationPrincipal User user,
-            @RequestParam("date") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
 
         List<DiaryResponseDTO> entries = diaryService.getEntriesByDate(user.getId(), date);
         return ResponseEntity.ok(entries);
@@ -50,7 +48,7 @@ public class DiaryController {
     @GetMapping("/search")
     public ResponseEntity<List<DiaryResponseDTO>> searchByKeyword(
             @AuthenticationPrincipal User user,
-            @RequestParam("keyword") String keyword) {
+            @RequestParam String keyword) {
 
         List<DiaryResponseDTO> entries = diaryService.searchByKeyword(user.getId(), keyword);
         return ResponseEntity.ok(entries);
