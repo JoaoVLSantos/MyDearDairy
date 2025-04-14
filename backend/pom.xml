@@ -8,10 +8,10 @@
 		<version>3.4.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.zerowaste</groupId>
-	<artifactId>zerowaste</artifactId>
+	<groupId>com.mydeardiary</groupId>
+	<artifactId>mydeardiary</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>zerowaste</name>
+	<name>mydeardiary</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -94,12 +94,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
 			<scope>test</scope>
 		</dependency>
 
