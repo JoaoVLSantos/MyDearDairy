@@ -16,6 +16,7 @@ public class DiaryRequestDTO {
         
     }
 
+    @NotBlank(message = "A titulo não pode estar vazia")
     private String title;
 
     @NotBlank(message = "A descrição não pode estar vazia")
