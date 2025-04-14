@@ -15,7 +15,7 @@ FROM nginx:alpine
 
 COPY ./docker/nginx.conf /etc/nginx/nginx.conf
 
-COPY --from=build /app/dist/my-dear-dairy /usr/share/nginx/html
+COPY --from=build /app/dist/my-dear-diary /usr/share/nginx/html
 
 EXPOSE 80
 
