@@ -27,4 +27,3 @@ jobs:
         run: |
           cd backend/src/main/java/com/mydeardiary
           mvn clean test 
-          
