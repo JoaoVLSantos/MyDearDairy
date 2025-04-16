@@ -1,0 +1,44 @@
+<div class="mood-entry-container">
+    <h2>Como estou me sentindo hoje?</h2>
+  
+    <div class="mood-selection">
+      <h3>Escolha seu humor</h3>
+      
+    <!-- Botões de Emojis apenas -->
+    <button (click)="mood = 'triste'" [class.selected]="mood === 'triste'">
+        😢
+    </button>
+    <button (click)="mood = 'tedio'" [class.selected]="mood === 'tedio'">
+        😐
+    </button>
+    <button (click)="mood = 'alegre'" [class.selected]="mood === 'alegre'">
+        😊
+    </button>
+    <button (click)="mood = 'muito_alegre'" [class.selected]="mood === 'muito_alegre'">
+        😁
+    </button>
+    <button (click)="mood = 'pensativo'" [class.selected]="mood === 'pensativo'">
+        🤔
+    </button>
+    </div>
+  
+    <div class="feeling-input">
+      <h3>O que você está sentindo?</h3>
+      <textarea #feelingInput placeholder="Escreva o que você está sentindo..." rows="4"></textarea>
+    </div>
+  
+    <div class="day-name-input">
+      <h3>Nomeie seu dia</h3>
+      <input type="text" #dayNameInput placeholder="Dê um nome para este dia">
+    </div>
+  
+    <div class="date-display">
+      <h3>Data</h3>
+      <input type="text" [value]="entryDate" disabled />
+    </div>
+  
+    <button (click)="onSaveEntry(feelingInput.value, dayNameInput.value)">Salvar Entrada</button>
+  </div>
+  
+  
+  

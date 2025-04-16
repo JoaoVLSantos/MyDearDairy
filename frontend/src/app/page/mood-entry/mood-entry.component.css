@@ -1,0 +1,110 @@
+/* Container geral */
+.mood-entry-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #7a4bc1; /* Cor roxa */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Seção de escolha de humor */
+  .mood-selection {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .mood-selection button {
+    background-color: #f3f3f3;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .mood-selection button.selected {
+    background-color: #7a4bc1;
+    color: white;
+    border-color: #7a4bc1;
+  }
+  
+  .mood-selection button:hover {
+    background-color: #d8c1e2;
+    transform: scale(1.1);
+  }
+  
+  /* Seção de sentimento */
+  .feeling-input,
+  .day-name-input,
+  .date-display {
+    margin-bottom: 20px;
+  }
+  
+  textarea,
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Estilo para o botão "Salvar Entrada" */
+  button {
+    background-color: #7a4bc1;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6a3a96;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Estilo para o campo de data (desabilitado) */
+  input[disabled] {
+    background-color: #f3f3f3;
+    color: #777;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .mood-selection {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mood-selection button {
+      margin: 10px;
+    }
+  }
+  

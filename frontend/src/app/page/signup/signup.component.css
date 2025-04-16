@@ -1,0 +1,132 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0e6fa;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #7a4bc1;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilo para o botão X */
+  .back-button {
+    position: absolute;
+    top: 25px; /* Ajusta a distância do topo */
+    left: 25px; /* Ajusta a distância da esquerda */
+    background-color: transparent;
+    border: none;
+    width: 25px; /* Largura pequena */
+    height: 25px; /* Altura pequena */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Remove o preenchimento interno */
+    color: #7a4bc1;  /* Cor do ícone X */
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adicionando um sombreamento suave */
+  }
+
+  .back-button:hover {
+    color: #ff6347;  /* Cor ao passar o mouse sobre o X */
+  }
+
+  /* Estilos adicionais para o componente de cadastro */
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  p {
+    font-size: 1.1em;
+    color: #5f5f5f;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-size: 1em;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #7a4bc1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6a3a96;
+  }
+  
+  .login-link {
+    margin-top: 15px;
+  }
+  
+  .login-link a {
+    color: #7a4bc1;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  /* Estilo para a mensagem de sucesso ou erro */
+.message {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.message.warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
