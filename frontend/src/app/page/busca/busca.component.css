@@ -1,0 +1,104 @@
+.search-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #7a4bc1;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Opções de filtro (Data ou Palavra-chave) */
+  .search-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-options button {
+    background-color: #0a0000;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .search-options button.selected {
+    background-color: #7a4bc1;
+    color: white;
+    border-color: #7a4bc1;
+  }
+  
+  .search-options button:hover {
+    background-color: #d8c1e2;
+    transform: scale(1.05);
+  }
+  
+  /* Formulários de busca */
+  input[type="date"], input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #7a4bc1;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6a3a96;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Lista de entradas */
+  .entries-list {
+    margin-top: 30px;
+  }
+  
+  .entry-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .entry-item p {
+    margin: 5px 0;
+  }
+  
+  /* Caso não haja resultados */
+  .no-results {
+    text-align: center;
+    color: #777;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  

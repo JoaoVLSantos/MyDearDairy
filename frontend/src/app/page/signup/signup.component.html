@@ -1,0 +1,54 @@
+<div class="signup-container">
+  <h1>Criar Conta</h1>
+  <p>Preencha seus dados para criar uma conta</p>
+
+  <button (click)="onGoHome()" class="back-button">X</button>
+
+  <!-- Mensagem de sucesso ou erro diretamente, sem ngIf -->
+  <div class="message">
+    <p>{{ message }}</p>
+  </div>
+
+  <form (ngSubmit)="onSignUp(nameInput.value, emailInput.value, passwordInput.value)">
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input
+        id="name"
+        type="text"
+        #nameInput
+        required
+        placeholder="Seu nome"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        #emailInput
+        required
+        placeholder="seu@email.com"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Senha</label>
+      <input
+        id="password"
+        type="password"
+        #passwordInput
+        required
+        class="form-control"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </form>
+
+  <div class="login-link">
+    <p>Já tem uma conta? <a (click)="onLogin()">Faça login</a></p>
+  </div>
+</div>

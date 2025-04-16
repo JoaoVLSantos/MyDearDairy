@@ -1,0 +1,37 @@
+<div class="search-container">
+  <h2>Buscar Entradas</h2>
+
+  <!-- Selecção de tipo de busca: Data ou Palavra-chave -->
+  <div class="search-options">
+    <button (click)="setSearchBy('date')" [class.selected]="searchBy === 'date'">Data</button>
+    <button (click)="setSearchBy('keyword')" [class.selected]="searchBy === 'keyword'">Palavra-chave</button>
+  </div>
+
+  <!-- Formulário de busca com base na opção escolhida -->
+  <div class="search-form">
+    <label for="searchDate" [hidden]="searchBy !== 'date'">Escolha uma data:</label>
+    <input type="date" id="searchDate" #searchDateInput [hidden]="searchBy !== 'date'" />
+
+    <label for="searchKeyword" [hidden]="searchBy !== 'keyword'">Digite uma palavra-chave:</label>
+    <input type="text" id="searchKeyword" #searchKeywordInput placeholder="Ex: Alegre, Triste" [hidden]="searchBy !== 'keyword'" />
+  </div>
+
+  <button (click)="performSearch(searchDateInput.value, searchKeywordInput.value)">Buscar</button>
+
+  <div class="entries-list">
+    <!-- Exibe a entrada quando houver resultados -->
+    <div class="entry-item">
+      <p><strong>Data:</strong> {{ filteredEntries[0]?.date }}</p>
+      <p><strong>Nome:</strong> {{ filteredEntries[0]?.name }}</p>
+      <p><strong>Sentimento:</strong> {{ filteredEntries[0]?.mood }}</p>
+    </div>
+
+    <!-- Exibe a mensagem de "Nenhuma entrada encontrada" quando não houver resultados -->
+    <div class="no-results">
+      <p>{{ filteredEntries.length === 0 ? 'Nenhuma entrada encontrada.' : '' }}</p>
+    </div>
+  </div>
+</div>
+
+  
+  
